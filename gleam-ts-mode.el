@@ -50,7 +50,7 @@
   "Hook that runs when `gleam-mode' starts."
   :type 'hook)
 
-(defvar gleam-ts-mode-indent-offset 2
+(defcustom gleam-ts-mode-indent-offset 2
   "Number of spaces for each indentation step in `gleam-ts-mode'."
   :type 'integer
   :safe 'integerp)
