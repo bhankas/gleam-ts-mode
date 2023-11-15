@@ -68,7 +68,7 @@
 (defun gleam-ts-mode--string-highlight-helper ()
   "Return a query for strings."
   (condition-case nil
-      (progn (treesit-query-capture 'java '((text_block) @font-lock-string-face))
+      (progn (treesit-query-capture 'gleam '((text_block) @font-lock-string-face))
              `((string_literal) @font-lock-string-face
                (text_block) @font-lock-string-face))
     (error
